@@ -8,16 +8,16 @@
 	</head>
 	<body>
 		<div id="app">
-            <h1>Jumlah Click {{count}} </h1>
+			<h1>Jumlah Click {{count}}</h1>
 			<button type="button" @click="count++">Tambah</button>
-        </div>
+		</div>
 
-        <script>
+		<script>
 			const { createApp, ref } = Vue;
 
 			createApp({
 				setup() {
-                    const count = ref(0);
+					const count = ref(0);
 					return {
 						count,
 					};
