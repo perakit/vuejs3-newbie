@@ -16,11 +16,11 @@
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nilai 1</span>
                 <input
-                    type="text"
+                    type="number"
                     v-model="nilai1"
                     class="form-control"
-                    placeholder="Username"
-                    aria-label="Username"
+                    placeholder="Nilai 1"
+                    aria-label="Nilai 1"
                     aria-describedby="basic-addon1"
                 />
             </div>
@@ -28,16 +28,16 @@
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nilai 2</span>
                 <input
-                    type="text"
+                    type="number"
                     v-model="nilai2"
                     class="form-control"
-                    placeholder="Username"
-                    aria-label="Username"
+                    placeholder="Nilai 2"
+                    aria-label="Nilai 2"
                     aria-describedby="basic-addon1"
                 />
             </div>
             <button class="w-100 btn btn-primary" @click="hitung">Hitung</button>
-            <h1 class="text-center mt-5">Hasil Suara: {{ hasil }}</h1>
+            <h1 class="text-center mt-5">Hasil: {{ hasil }}</h1>
         </div>
 
         <script>
@@ -46,9 +46,9 @@
             createApp({
                 data() {
                     return {
-                        nilai1: ref(0),
-                        nilai2: ref(0),
-                        hasil: ref(0),
+                        nilai1: ref(),
+                        nilai2: ref(),
+                        hasil: ref(),
                     };
                 },
                 methods: {
